@@ -1,13 +1,8 @@
-if __name__ == '__main__':
-    n = int(input())
-    student_marks = {}
-    score = []
-    for _ in range(n):
-        name, *line = input().split()
-        scores = list(map(float, line))
-        student_marks[name] = scores
-    query_name = input()
-    for i in student_marks[query_name]:
-        score.append(i)
+def percentage(student_marks,query_name):
+    total = 0
+    for i in range(len(student_marks[query_name])):
+       total = total + student_marks[query_name][i] #adding marks of query name
+    avg = total /len(student_marks[query_name])
+    return  avg
 
-    print(f'{(score[0] + score[1] + score[2]) / 3:.2f}')
+#print(percentage(student_marks={'harsh': [25, 26.5, 28], 'Anurag': [26, 28, 30]},query_name='harsh'))
