@@ -1,6 +1,13 @@
 import numpy as np
-np.set_printoptions(legacy='1.13')
-A = np.array(list(map(float,input().split())))
-print(np.floor(A))
-print(np.ceil(A))
-print(np.rint(A))
+
+
+def floor_arr(array):
+    array = np.array(array)
+    np.set_printoptions(legacy='1.13')
+    return np.floor(array)
+def ceil_arr(array):
+    array = np.array(array)
+    return np.ceil(array)
+def rint_arr(array):
+    array = np.array(array)
+    return np.rint(array)
