@@ -1,4 +1,4 @@
-def fun(s):
+def filter_email(s):
     valid = True
 
     if s.count('@') != 1:
@@ -27,3 +27,4 @@ def fun(s):
                 if not t.isalnum():
                     return not valid
     return valid
+filter_email(s=('brian-23@hackerrank.com'))
