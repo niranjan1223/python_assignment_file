@@ -1,1 +1,2 @@
-python solutions from hackerrank
+python solutions from hackerrank 
+with unittesting
