@@ -1,8 +1,8 @@
-N, M = map(int, input().split())
 
-l = []
-for n in range(N):
-    one, two = map(int, input().split())
-    l.append(min(one, two))
+# axis=0--> columns
+# axis=1-->rows
 
-print(max(l))
+import numpy as np
+def min_max(Ans):
+    l=sorted(np.min(Ans, axis = 1))
+    return l[-1]
